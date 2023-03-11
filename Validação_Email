@@ -1,0 +1,18 @@
+import re
+
+def validar_email(email):
+    # define a expressão regular para validar endereços de e-mail
+    padrao = r'^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)*(\.[a-z]{2,})$'
+    
+    # verifica se o endereço de e-mail corresponde ao padrão
+    if re.match(padrao, email):
+        return True
+    else:
+        return False
+        
+endereco_email = "exemplo@dominio.com"
+
+if validar_email(endereco_email):
+    print("Endereço de e-mail válido.")
+else:
+    print("Endereço de e-mail inválido.")
