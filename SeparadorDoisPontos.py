@@ -1,4 +1,4 @@
-# Abre o arquivo
+# Abre o arquivo com dois pontos
 arquivo = open("example.txt", "r", encoding="utf-8")
 
 # Abre os arquivos de saída
